@@ -1,5 +1,5 @@
 projects:
-  - key:
+  - key: default
     dir: src
     aliases:
       - type: camelcase

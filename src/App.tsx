@@ -2,12 +2,12 @@ import './App.css'
 import { useFlags } from 'launchdarkly-react-client-sdk'
 
 function App() {
-  const { greentext } = useFlags()
+  const { myTestFlag } = useFlags()
 
   return (
     <div>
-      <p {...(greentext ? { style: { color: 'green' } } : {})}>
-        Green flag is {greentext ? 'true' : 'false'}
+      <p {...(myTestFlag ? { style: { color: 'green' } } : {})}>
+        Green flag is {myTestFlag ? 'true' : 'false'}
       </p>
     </div>
   )
